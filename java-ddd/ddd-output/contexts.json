@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-03-24T17:54:13+08:00",
+  "bounded_contexts": [
+    {
+      "name": "用户管理上下文",
+      "type": "core",
+      "responsibilities": ["用户注册", "用户认证", "权限管理"],
+      "entities": ["用户", "角色", "权限"]
+    },
+    {
+      "name": "商品管理上下文",
+      "type": "core",
+      "responsibilities": ["商品发布", "商品分类", "库存管理"],
+      "entities": ["商品", "分类", "库存"]
+    },
+    {
+      "name": "订单处理上下文",
+      "type": "core",
+      "responsibilities": ["订单创建", "订单状态管理", "订单查询"],
+      "entities": ["订单", "订单项", "收货地址"]
+    }
+  ]
+}
